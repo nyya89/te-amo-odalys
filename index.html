@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ odalys mi diosa ❤️</title>
+    <style>
+        body {
+            background-color: crimson;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .body__title {
+            color: white;
+            margin-top: 50px;
+        }
+
+        .body__img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin-top: 30px;
+        }
+
+        .body__buttons {
+            margin-top: 50px;
+        }
+
+        #yes,
+        #no {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            background-color: white;
+            color: crimson;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #yes:hover,
+        #no:hover {
+            background-color: #f8f8f8;
+        }
+
+        #no {
+            position: relative;
+        }
+
+        #no:hover {
+            top: -5px;
+            left: -5px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="body__title">❤️ quieres ser mi tilina  dalys❤️</h1>
+    <img src="https://th.bing.com/th/id/R.732e7ae39df98625cc5b5646aa8ab2fb?rik=HTBvo%2bOVMt2xCQ&riu=http%3a%2f%2fstatic.sticker.ly%2fsticker_pack%2f1OzmnaU2rNLhyhkZpvaJQg%2f5LAD7V%2f14%2fa5876573-48a0-48a6-ac00-136f3effdbdf.png&ehk=tP5P8RsNocOOQSJaRY7vsY2A2Z68g75jSpBQf1CLI%2b8%3d&risl=&pid=ImgRaw&r=0"
+        alt="yo" class="body__img" />
+    <div class="body__buttons">
+        <button id="yes">❤️ Si ❤️</button>
+        <button id="no">😢 No 😢</button>
+    </div>
+
+    <script>
+        const buttonSi = document.getElementById('yes');
+        const buttonNo = document.getElementById('no');
+
+        const somosNovios = () => {
+            alert('💕ahora somos novios💕');
+            alert('❤️ mandame mensaje UwU ❤️');
+            window.location.href = 'https://youtu.be/6q8jm0Lu7GU=1';
+        };
+
+        const evitarQueDigaNo = () => {
+            buttonNo.style.position = 'absolute';
+            buttonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+            buttonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+        };
+
+        buttonSi.addEventListener('click', somosNovios);
+        buttonNo.addEventListener('mouseover', evitarQueDigaNo);
+</script>
+
+</body>
+</html>
